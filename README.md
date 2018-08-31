@@ -1,3 +1,3 @@
 # фрагменты кода Bitrix
-получаем параметры товара по PRODUCT_XML_ID<br>
+1. получаем параметры товара по PRODUCT_XML_ID<br>
 $ar_res = CCatalogProduct::GetByIDEx($arItem['PRODUCT_XML_ID']);
