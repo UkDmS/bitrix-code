@@ -2,6 +2,9 @@
 1. получаем параметры товара по PRODUCT_XML_ID<br>
 $ar_res = CCatalogProduct::GetByIDEx($arItem['PRODUCT_XML_ID']);
 
+$prop=CIBlockElement::GetByID($arResult["ORIGINAL_PARAMETERS"]['ID'])->GetNextElement()->GetProperties();
+print "<pre>"; print_r($prop["do_not_forget"]["VALUE"]); print "</pre>";
+
 
 $ID = array();
     $res = CIBlockElement::GetProperty(27,
